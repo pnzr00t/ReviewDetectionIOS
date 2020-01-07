@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ReviewDetection" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="VTi-ca-i28">
+                                <rect key="frame" x="20" y="44" width="374" height="200"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="kYO-nk-T9H"/>
+                                </constraints>
+                                <string key="text">Not cool music. Realy very bad music. I thought, i thought it would be much better at all. I thought it place have not bad music, very bad music, very! I was yesterday and it has not very bad music, but today they fail! Very few peoples, bad music...</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rDO-Gh-z4g">
+                                <rect key="frame" x="184" y="252" width="46" height="30"/>
+                                <state key="normal" title="Detect"/>
+                                <connections>
+                                    <action selector="onDetectButtonPush:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A5i-Pv-8iy"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Default score:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="12A-Km-AmI" userLabel="default-score-label">
+                                <rect key="frame" x="20" y="290" width="107" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="not detect" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uAn-db-lyI" userLabel="default-score-value">
+                                <rect key="frame" x="135" y="290" width="259" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Digit score:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n6K-nZ-cbB" userLabel="digit-score-labe">
+                                <rect key="frame" x="20" y="319" width="87" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="not_detect" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pmn-Og-Qx0" userLabel="digit-score-value">
+                                <rect key="frame" x="115" y="319" width="279" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BNG score:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pgQ-vO-LdA" userLabel="bng-score-label">
+                                <rect key="frame" x="20" y="348" width="87" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="not_detect" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GKL-Je-LeS" userLabel="bng-score-value">
+                                <rect key="frame" x="115" y="348" width="279" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="pgQ-vO-LdA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="5ig-CD-570"/>
+                            <constraint firstItem="VTi-ca-i28" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="72G-JB-CrJ"/>
+                            <constraint firstItem="VTi-ca-i28" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="81j-hR-Cfr"/>
+                            <constraint firstItem="rDO-Gh-z4g" firstAttribute="top" secondItem="VTi-ca-i28" secondAttribute="bottom" constant="8" symbolic="YES" id="8Yu-nm-QjK"/>
+                            <constraint firstItem="GKL-Je-LeS" firstAttribute="centerY" secondItem="pgQ-vO-LdA" secondAttribute="centerY" id="8a1-g6-2lX"/>
+                            <constraint firstItem="GKL-Je-LeS" firstAttribute="leading" secondItem="pgQ-vO-LdA" secondAttribute="trailing" constant="8" symbolic="YES" id="BX3-j5-aA3"/>
+                            <constraint firstItem="uAn-db-lyI" firstAttribute="leading" secondItem="12A-Km-AmI" secondAttribute="trailing" constant="8" symbolic="YES" id="GeL-6o-EM9"/>
+                            <constraint firstItem="Pmn-Og-Qx0" firstAttribute="leading" secondItem="n6K-nZ-cbB" secondAttribute="trailing" constant="8" symbolic="YES" id="LUt-M1-MMo"/>
+                            <constraint firstItem="n6K-nZ-cbB" firstAttribute="top" secondItem="12A-Km-AmI" secondAttribute="bottom" constant="8" id="LZb-YJ-do7"/>
+                            <constraint firstItem="rDO-Gh-z4g" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="QPa-Rr-kj3"/>
+                            <constraint firstItem="pgQ-vO-LdA" firstAttribute="top" secondItem="n6K-nZ-cbB" secondAttribute="bottom" constant="8" symbolic="YES" id="UzF-W2-MTq"/>
+                            <constraint firstItem="Pmn-Og-Qx0" firstAttribute="centerY" secondItem="n6K-nZ-cbB" secondAttribute="centerY" id="YhX-iF-zwe"/>
+                            <constraint firstItem="Pmn-Og-Qx0" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-20" id="Yji-xf-esy"/>
+                            <constraint firstItem="12A-Km-AmI" firstAttribute="top" secondItem="rDO-Gh-z4g" secondAttribute="bottom" constant="8" symbolic="YES" id="a4n-lm-aYd"/>
+                            <constraint firstItem="VTi-ca-i28" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-20" id="dUi-Ne-iin"/>
+                            <constraint firstItem="12A-Km-AmI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="eBL-8E-qLP"/>
+                            <constraint firstItem="GKL-Je-LeS" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-20" id="hCU-5f-HK1"/>
+                            <constraint firstItem="uAn-db-lyI" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-20" id="qz7-gV-4ST"/>
+                            <constraint firstItem="n6K-nZ-cbB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="sPx-3g-fGT"/>
+                            <constraint firstItem="uAn-db-lyI" firstAttribute="centerY" secondItem="12A-Km-AmI" secondAttribute="centerY" id="zWB-li-WEM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="bngScoreValue" destination="GKL-Je-LeS" id="dhf-gW-3Pg"/>
+                        <outlet property="defaultScoreValue" destination="uAn-db-lyI" id="nFl-QP-WX0"/>
+                        <outlet property="digitScoreValue" destination="Pmn-Og-Qx0" id="2Ju-EH-d9v"/>
+                        <outlet property="textForReview" destination="VTi-ca-i28" id="0Dc-VN-UiQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+</document>

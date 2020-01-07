@@ -1,0 +1,511 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BD5ECDD923C4B14D0069BA03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5ECDD823C4B14D0069BA03 /* AppDelegate.swift */; };
+		BD5ECDDB23C4B14D0069BA03 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5ECDDA23C4B14D0069BA03 /* SceneDelegate.swift */; };
+		BD5ECDDD23C4B14D0069BA03 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5ECDDC23C4B14D0069BA03 /* ViewController.swift */; };
+		BD5ECDE023C4B14D0069BA03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD5ECDDE23C4B14D0069BA03 /* Main.storyboard */; };
+		BD5ECDE323C4B14D0069BA03 /* ReviewDetection.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BD5ECDE123C4B14D0069BA03 /* ReviewDetection.xcdatamodeld */; };
+		BD5ECDE523C4B1500069BA03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD5ECDE423C4B1500069BA03 /* Assets.xcassets */; };
+		BD5ECDE823C4B1500069BA03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD5ECDE623C4B1500069BA03 /* LaunchScreen.storyboard */; };
+		BD5ECDF323C4B1500069BA03 /* ReviewDetectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5ECDF223C4B1500069BA03 /* ReviewDetectionTests.swift */; };
+		BD5ECE0123C4B18F0069BA03 /* ReviewClassifier-Bad-Good-Normal.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = BD5ECDFE23C4B18F0069BA03 /* ReviewClassifier-Bad-Good-Normal.mlmodel */; };
+		BD5ECE0223C4B18F0069BA03 /* ReviewClassifier-default.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = BD5ECDFF23C4B18F0069BA03 /* ReviewClassifier-default.mlmodel */; };
+		BD5ECE0323C4B18F0069BA03 /* ReviewClassifier-Score-As-String.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = BD5ECE0023C4B18F0069BA03 /* ReviewClassifier-Score-As-String.mlmodel */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BD5ECDEF23C4B1500069BA03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD5ECDCD23C4B14D0069BA03 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD5ECDD423C4B14D0069BA03;
+			remoteInfo = ReviewDetection;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BD5ECDD523C4B14D0069BA03 /* ReviewDetection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReviewDetection.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD5ECDD823C4B14D0069BA03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BD5ECDDA23C4B14D0069BA03 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BD5ECDDC23C4B14D0069BA03 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BD5ECDDF23C4B14D0069BA03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BD5ECDE223C4B14D0069BA03 /* ReviewDetection.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ReviewDetection.xcdatamodel; sourceTree = "<group>"; };
+		BD5ECDE423C4B1500069BA03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BD5ECDE723C4B1500069BA03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BD5ECDE923C4B1500069BA03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD5ECDEE23C4B1500069BA03 /* ReviewDetectionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReviewDetectionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD5ECDF223C4B1500069BA03 /* ReviewDetectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewDetectionTests.swift; sourceTree = "<group>"; };
+		BD5ECDF423C4B1500069BA03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD5ECDFE23C4B18F0069BA03 /* ReviewClassifier-Bad-Good-Normal.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "ReviewClassifier-Bad-Good-Normal.mlmodel"; sourceTree = "<group>"; };
+		BD5ECDFF23C4B18F0069BA03 /* ReviewClassifier-default.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "ReviewClassifier-default.mlmodel"; sourceTree = "<group>"; };
+		BD5ECE0023C4B18F0069BA03 /* ReviewClassifier-Score-As-String.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "ReviewClassifier-Score-As-String.mlmodel"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BD5ECDD223C4B14D0069BA03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD5ECDEB23C4B1500069BA03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BD5ECDCC23C4B14D0069BA03 = {
+			isa = PBXGroup;
+			children = (
+				BD5ECDD723C4B14D0069BA03 /* ReviewDetection */,
+				BD5ECDF123C4B1500069BA03 /* ReviewDetectionTests */,
+				BD5ECDD623C4B14D0069BA03 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BD5ECDD623C4B14D0069BA03 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BD5ECDD523C4B14D0069BA03 /* ReviewDetection.app */,
+				BD5ECDEE23C4B1500069BA03 /* ReviewDetectionTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BD5ECDD723C4B14D0069BA03 /* ReviewDetection */ = {
+			isa = PBXGroup;
+			children = (
+				BD5ECDFD23C4B1720069BA03 /* Resource */,
+				BD5ECDD823C4B14D0069BA03 /* AppDelegate.swift */,
+				BD5ECDDA23C4B14D0069BA03 /* SceneDelegate.swift */,
+				BD5ECDDC23C4B14D0069BA03 /* ViewController.swift */,
+				BD5ECDDE23C4B14D0069BA03 /* Main.storyboard */,
+				BD5ECDE423C4B1500069BA03 /* Assets.xcassets */,
+				BD5ECDE623C4B1500069BA03 /* LaunchScreen.storyboard */,
+				BD5ECDE923C4B1500069BA03 /* Info.plist */,
+				BD5ECDE123C4B14D0069BA03 /* ReviewDetection.xcdatamodeld */,
+			);
+			path = ReviewDetection;
+			sourceTree = "<group>";
+		};
+		BD5ECDF123C4B1500069BA03 /* ReviewDetectionTests */ = {
+			isa = PBXGroup;
+			children = (
+				BD5ECDF223C4B1500069BA03 /* ReviewDetectionTests.swift */,
+				BD5ECDF423C4B1500069BA03 /* Info.plist */,
+			);
+			path = ReviewDetectionTests;
+			sourceTree = "<group>";
+		};
+		BD5ECDFD23C4B1720069BA03 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				BD5ECDFE23C4B18F0069BA03 /* ReviewClassifier-Bad-Good-Normal.mlmodel */,
+				BD5ECDFF23C4B18F0069BA03 /* ReviewClassifier-default.mlmodel */,
+				BD5ECE0023C4B18F0069BA03 /* ReviewClassifier-Score-As-String.mlmodel */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BD5ECDD423C4B14D0069BA03 /* ReviewDetection */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD5ECDF723C4B1500069BA03 /* Build configuration list for PBXNativeTarget "ReviewDetection" */;
+			buildPhases = (
+				BD5ECDD123C4B14D0069BA03 /* Sources */,
+				BD5ECDD223C4B14D0069BA03 /* Frameworks */,
+				BD5ECDD323C4B14D0069BA03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReviewDetection;
+			productName = ReviewDetection;
+			productReference = BD5ECDD523C4B14D0069BA03 /* ReviewDetection.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BD5ECDED23C4B1500069BA03 /* ReviewDetectionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD5ECDFA23C4B1500069BA03 /* Build configuration list for PBXNativeTarget "ReviewDetectionTests" */;
+			buildPhases = (
+				BD5ECDEA23C4B1500069BA03 /* Sources */,
+				BD5ECDEB23C4B1500069BA03 /* Frameworks */,
+				BD5ECDEC23C4B1500069BA03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BD5ECDF023C4B1500069BA03 /* PBXTargetDependency */,
+			);
+			name = ReviewDetectionTests;
+			productName = ReviewDetectionTests;
+			productReference = BD5ECDEE23C4B1500069BA03 /* ReviewDetectionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BD5ECDCD23C4B14D0069BA03 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Oleg Pustoshkin";
+				TargetAttributes = {
+					BD5ECDD423C4B14D0069BA03 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					BD5ECDED23C4B1500069BA03 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = BD5ECDD423C4B14D0069BA03;
+					};
+				};
+			};
+			buildConfigurationList = BD5ECDD023C4B14D0069BA03 /* Build configuration list for PBXProject "ReviewDetection" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BD5ECDCC23C4B14D0069BA03;
+			productRefGroup = BD5ECDD623C4B14D0069BA03 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BD5ECDD423C4B14D0069BA03 /* ReviewDetection */,
+				BD5ECDED23C4B1500069BA03 /* ReviewDetectionTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BD5ECDD323C4B14D0069BA03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD5ECDE823C4B1500069BA03 /* LaunchScreen.storyboard in Resources */,
+				BD5ECDE523C4B1500069BA03 /* Assets.xcassets in Resources */,
+				BD5ECDE023C4B14D0069BA03 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD5ECDEC23C4B1500069BA03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BD5ECDD123C4B14D0069BA03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD5ECE0223C4B18F0069BA03 /* ReviewClassifier-default.mlmodel in Sources */,
+				BD5ECDDD23C4B14D0069BA03 /* ViewController.swift in Sources */,
+				BD5ECDE323C4B14D0069BA03 /* ReviewDetection.xcdatamodeld in Sources */,
+				BD5ECE0323C4B18F0069BA03 /* ReviewClassifier-Score-As-String.mlmodel in Sources */,
+				BD5ECE0123C4B18F0069BA03 /* ReviewClassifier-Bad-Good-Normal.mlmodel in Sources */,
+				BD5ECDD923C4B14D0069BA03 /* AppDelegate.swift in Sources */,
+				BD5ECDDB23C4B14D0069BA03 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD5ECDEA23C4B1500069BA03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD5ECDF323C4B1500069BA03 /* ReviewDetectionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BD5ECDF023C4B1500069BA03 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD5ECDD423C4B14D0069BA03 /* ReviewDetection */;
+			targetProxy = BD5ECDEF23C4B1500069BA03 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BD5ECDDE23C4B14D0069BA03 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD5ECDDF23C4B14D0069BA03 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BD5ECDE623C4B1500069BA03 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD5ECDE723C4B1500069BA03 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BD5ECDF523C4B1500069BA03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BD5ECDF623C4B1500069BA03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BD5ECDF823C4B1500069BA03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JWZFYU2GR9;
+				INFOPLIST_FILE = ReviewDetection/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "test-ident.ReviewDetection";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BD5ECDF923C4B1500069BA03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JWZFYU2GR9;
+				INFOPLIST_FILE = ReviewDetection/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "test-ident.ReviewDetection";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BD5ECDFB23C4B1500069BA03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JWZFYU2GR9;
+				INFOPLIST_FILE = ReviewDetectionTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "test-ident.ReviewDetectionTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReviewDetection.app/ReviewDetection";
+			};
+			name = Debug;
+		};
+		BD5ECDFC23C4B1500069BA03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JWZFYU2GR9;
+				INFOPLIST_FILE = ReviewDetectionTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "test-ident.ReviewDetectionTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReviewDetection.app/ReviewDetection";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BD5ECDD023C4B14D0069BA03 /* Build configuration list for PBXProject "ReviewDetection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD5ECDF523C4B1500069BA03 /* Debug */,
+				BD5ECDF623C4B1500069BA03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD5ECDF723C4B1500069BA03 /* Build configuration list for PBXNativeTarget "ReviewDetection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD5ECDF823C4B1500069BA03 /* Debug */,
+				BD5ECDF923C4B1500069BA03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD5ECDFA23C4B1500069BA03 /* Build configuration list for PBXNativeTarget "ReviewDetectionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD5ECDFB23C4B1500069BA03 /* Debug */,
+				BD5ECDFC23C4B1500069BA03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BD5ECDE123C4B14D0069BA03 /* ReviewDetection.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BD5ECDE223C4B14D0069BA03 /* ReviewDetection.xcdatamodel */,
+			);
+			currentVersion = BD5ECDE223C4B14D0069BA03 /* ReviewDetection.xcdatamodel */;
+			path = ReviewDetection.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BD5ECDCD23C4B14D0069BA03 /* Project object */;
+}
